@@ -39,7 +39,8 @@ Agent的开发离不开外部工具的支持，兴河 AI Assistant 统一了工�
 6、cd ExternalTools/mcp-sse-client-python/
 7、python setup.py install
 8、cd ../../
-9、python main.py --workers=5 #使用gemini等国外模型记得要先设置命令行代理
+9、playwright install
+10、python main.py --workers=5 #使用gemini等国外模型记得要先设置命令行代理
 ```
 
 没有授权文件请联系作者获取，获取到授权文件放在`main.py`同级目录即可。
