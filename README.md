@@ -28,6 +28,7 @@ Agent的开发离不开外部工具的支持，兴河 AI Assistant 统一了工�
 ## 服务端安装
 准备：
 服务端使用了`LibreOffice`的一些功能，请先安装`LibreOffice`：https://zh-tw.libreoffice.org/download/download-libreoffice/
+
 服务端使用了ollama中的bge-m3:latest，请先安装ollama，然后`ollama pull bge-m3:latest`
 ```shell
 1、解压下载好的xinghe_assistant_server_mac_arm_v1.0.0.zip
