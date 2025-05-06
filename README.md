@@ -76,12 +76,13 @@ python create_token.py
 如果您感觉对您有帮助，希望您可以成为我b站的原始粉丝（**突破1000粉之前**），后续有活动原始粉丝优先。
 
 
+内测期间，兴河AI助手**完全免费**，有向您付费出售的，请喷他拉黑举报三连。
+
+
+
 # 联系我
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="二维码.png">
   <img alt="" src="二维码.png"  width="full">
 </picture>
-
-
-内测期间，兴河AI助手**完全免费**，有向您付费出售的，请喷他拉黑举报三连。
