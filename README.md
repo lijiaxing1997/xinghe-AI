@@ -83,6 +83,6 @@ python create_token.py
 # 联系我
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="二维码.png">
-  <img alt="" src="二维码.png"  width="full">
+  <source media="(prefers-color-scheme: light)" srcset="二维码.jpg">
+  <img alt="" src="二维码.jpg"  width="full">
 </picture>
