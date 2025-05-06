@@ -84,5 +84,5 @@ python create_token.py
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="二维码.jpg">
-  <img alt="" src="二维码.jpg"  width="full">
+  <img alt="" src="二维码.jpg"  width="20%">
 </picture>
