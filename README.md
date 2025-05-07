@@ -31,8 +31,8 @@ Agent的开发离不开外部工具的支持，兴河 AI Assistant 统一了工�
 
 服务端使用了ollama中的bge-m3:latest，请先安装ollama，然后`ollama pull bge-m3:latest`
 ```shell
-1、解压下载好的xinghe_assistant_server_mac_arm_v1.0.0.zip
-2、cd xinghe_assistant_server_v1.0.0_mac_arm
+1、解压下载好的xinghe.assistant-server-v1.0.0.zip
+2、cd xinghe.assistant-server-v1.0.0
 3、conda create --name xinghe python=3.11 //遇到选择选y就行
 4、conda activate xinghe
 5、pip install -r requirements.txt
