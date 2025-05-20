@@ -53,6 +53,28 @@ python create_token.py
 ```
 来创建`token`文件，如果`token`泄漏或想更换`token`，请再次执行上述命令。
 
+## ASR 安装
+拉取镜像
+```shell
+docker run -p 10096:10095 -it --privileged=true \
+  -v $PWD/funasr-runtime-resources/models:/workspace/models \
+  registry.cn-hangzhou.aliyuncs.com/funasr_repo/funasr:funasr-runtime-sdk-online-cpu-0.1.12
+```
+进入容器，启动服务
+```shell
+cd FunASR/runtime
+bash run_server_2pass.sh \
+  --download-model-dir /workspace/models \
+  --vad-dir damo/speech_fsmn_vad_zh-cn-16k-common-onnx \
+  --model-dir damo/speech_paraformer-large-vad-punc_asr_nat-zh-cn-16k-common-vocab8404-onnx  \
+  --online-model-dir damo/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-online-onnx  \
+  --punc-dir damo/punc_ct-transformer_zh-cn-common-vad_realtime-vocab272727-onnx \
+  --lm-dir damo/speech_ngram_lm_zh-cn-ai-wesp-fst \
+  --itn-dir thuduj12/fst_itn_zh \
+    --certfile 0 \
+  --hotword /workspace/models/hotwords.txt
+```
+
 
 # 授权码获取
 
