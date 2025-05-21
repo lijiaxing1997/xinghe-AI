@@ -23,7 +23,7 @@ Agent的开发离不开外部工具的支持，兴河 AI Assistant 统一了工�
 </picture>
 
 # 安装
-bilibili有教程：`https://space.bilibili.com/3546854893554040`
+bilibili教程：`https://www.bilibili.com/video/BV1Qn53zBEAU`
 ## 客户端安装
 选择自己合适的平台进行安装即可。
 ## 服务端安装
@@ -55,6 +55,7 @@ python create_token.py
 来创建`token`文件，如果`token`泄漏或想更换`token`，请再次执行上述命令。
 
 ## ASR 安装
+bilibili教程：`https://www.bilibili.com/video/BV1YQEFzpEaa`
 拉取镜像
 ```shell
 docker run -p 10096:10095 -it --privileged=true \
