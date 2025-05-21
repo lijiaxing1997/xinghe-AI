@@ -55,7 +55,7 @@ python create_token.py
 来创建`token`文件，如果`token`泄漏或想更换`token`，请再次执行上述命令。
 
 ## ASR 安装
-bilibili教程：`https://www.bilibili.com/video/BV1YQEFzpEaa`
+bilibili教程：`https://www.bilibili.com/video/BV1GhJzzPE2U`
 拉取镜像
 ```shell
 docker run -p 10096:10095 -it --privileged=true \
