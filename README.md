@@ -56,6 +56,7 @@ python create_token.py
 
 ## ASR 安装
 bilibili教程：`https://www.bilibili.com/video/BV1GhJzzPE2U`
+
 拉取镜像
 ```shell
 docker run -p 10096:10095 -it --privileged=true \
@@ -76,6 +77,21 @@ bash run_server_2pass.sh \
     --certfile 0 \
   --hotword /workspace/models/hotwords.txt
 ```
+
+## 视觉FastVLM安装
+bilibili教程：`https://www.bilibili.com/video/BV1GhJzzPE2U`
+
+夸克网盘下载链接：https://pan.quark.cn/s/36950840ee1e 提取码：WHTM
+```
+1、zip文件下载完成后解压
+2、使用命令行进入zip解压的目录
+3、conda create -n fastvlm python=3.10
+4、conda activate fastvlm
+5、pip install -e .
+6、python main.py
+```
+就可以看到api的端口，去兴河AI填上即可。
+
 
 
 # 授权码获取
