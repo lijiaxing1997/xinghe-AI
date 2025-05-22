@@ -79,7 +79,7 @@ bash run_server_2pass.sh \
 ```
 
 ## 视觉FastVLM安装
-bilibili教程：`https://www.bilibili.com/video/BV1GhJzzPE2U`
+bilibili教程：`https://www.bilibili.com/video/BV1hEJJz6EAW`
 
 夸克网盘下载链接：https://pan.quark.cn/s/36950840ee1e 提取码：WHTM
 ```
