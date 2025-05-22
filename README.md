@@ -90,7 +90,7 @@ bilibili教程：`https://www.bilibili.com/video/BV1GhJzzPE2U`
 5、pip install -e .
 6、python main.py
 ```
-就可以看到api的端口，去兴河AI填上即可。
+就可以看到api的端口，去兴河AI填上`http://127.0.0.1:9091/descImage`即可。
 
 
 
