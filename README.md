@@ -18,8 +18,8 @@ Agent的开发离不开外部工具的支持，兴河 AI Assistant 统一了工�
 # 预览
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="组合.png">
-  <img alt="" src="组合.png"  width="full">
+  <source media="(prefers-color-scheme: light)" srcset="兴河AI_Assistant_Image.png">
+  <img alt="" src="兴河AI_Assistant_Image.png"  width="full">
 </picture>
 
 # 安装
