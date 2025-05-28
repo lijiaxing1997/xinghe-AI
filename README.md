@@ -55,7 +55,7 @@ python create_token.py
 来创建`token`文件，如果`token`泄漏或想更换`token`，请再次执行上述命令。
 
 ## TTS 文本转语音
-bilibili教程：[`[https://www.bilibili.com/video/BV1GhJzzPE2U](https://www.bilibili.com/video/BV1x8jvzqES9)`](https://www.bilibili.com/video/BV1x8jvzqES9)
+bilibili教程：`https://www.bilibili.com/video/BV1x8jvzqES9`
 
 下载我打包的流式TTS整合包
 ```
