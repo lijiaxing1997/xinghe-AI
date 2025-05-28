@@ -54,6 +54,24 @@ python create_token.py
 ```
 来创建`token`文件，如果`token`泄漏或想更换`token`，请再次执行上述命令。
 
+## TTS 文本转语音
+bilibili教程：`https://www.bilibili.com/video/BV1GhJzzPE2U`
+
+下载我打包的流式TTS整合包
+```
+我用夸克网盘分享了「xiaomi-websocket-tts-stream.zip」，点击链接即可保存。打开「夸克APP」，无需下载在线播放视频，畅享原画5倍速，支持电视投屏。
+链接：https://pan.quark.cn/s/d104a0e57294
+提取码：XLZA
+```
+解压后执行一下命令来启动
+```
+conda create --name=xiaomi-tts python=3.11
+conda activate xiaomi-tts
+pip install -r requirements.txt
+python tts_websocket_server.py
+```
+然后到兴河AI客户端配置即可`ws://127.0.0.1:8011/`
+
 ## ASR 安装
 bilibili教程：`https://www.bilibili.com/video/BV1GhJzzPE2U`
 
