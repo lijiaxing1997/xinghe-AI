@@ -46,8 +46,12 @@ bilibili教程：`https://www.bilibili.com/video/BV1Qn53zBEAU`
 8、cd ../../
 9、playwright install
 10、python create_token.py #生成token，这是访问服务器的必须要素。如果token泄漏或想更换token，请再次执行上述命令
-11、python main.py --workers=5 #使用gemini等国外模型记得要先设置命令行代理
 ```
+因为不同操作系统管理多进程有差异，所以列举了以下启动命令：
+
+windows 启动方式：`python -m uvicorn main:app --workers 5`
+
+macos 启动方式：`python main.py --workers=5`
 
 服务端目录下有`.env`文件，请运行前打开编辑，填入`api key`，才可以调用模型
 
