@@ -2,7 +2,7 @@
   <source media="(prefers-color-scheme: light)" srcset="标题.png">
   <img alt="" src="标题.png"  width="full">
 </picture>
-<h1 align="center">LangChain & MCP 统一调用的 AI 🤖</h1>
+<h1 align="center">支持多客户端 & Langchain和MCP 统一调用的 AI 🤖</h1>
 
 
 
