@@ -14,6 +14,10 @@ Agent的开发离不开外部工具的支持，兴河 AI Assistant 统一了工�
     
 我也会积极听取大家的意见，制作最贴合大家需求的Langchain或MCP工具，希望可以在内测期间和大家多多交流。
 
+自从5.7日开启内测后，至今（6.2日），修复了很多问题，同时也新增了很多功能，客户端也从开始的单用户迈向了多用户支持。
+
+在我的设想里 兴河 AI 以后将会是我所做的所有产品的核心，它具同时有支持多客户端多个Live2d形象的强大能力。是驱动未来人工智能交互方式的绝对核心！
+
 
 # 预览
 
@@ -41,24 +45,26 @@ bilibili教程：`https://www.bilibili.com/video/BV1Qn53zBEAU`
 7、python setup.py install
 8、cd ../../
 9、playwright install
-10、python main.py --workers=5 #使用gemini等国外模型记得要先设置命令行代理
+10、python create_token.py #生成token，这是访问服务器的必须要素。如果token泄漏或想更换token，请再次执行上述命令
+11、python main.py --workers=5 #使用gemini等国外模型记得要先设置命令行代理
 ```
 
 服务端目录下有`.env`文件，请运行前打开编辑，填入`api key`，才可以调用模型
 
 没有授权文件请联系作者获取，获取到授权文件放在`main.py`同级目录即可。
 
-关于身份验证，本程序仅使用随机数生成`token`，无会话有效时间，在正常进入程序前，请使用
-```
-python create_token.py
-```
-来创建`token`文件，如果`token`泄漏或想更换`token`，请再次执行上述命令。
 
 ## TTS 文本转语音
-bilibili教程：`https://www.bilibili.com/video/BV1x8jvzqES9`
+非流式的TTS教程：https://www.bilibili.com/video/BV1YQEFzpEaa
 
-下载我打包的流式TTS整合包
+非流式请观看教程视频
+
+流式的TTS bilibili教程：`https://www.bilibili.com/video/BV1x8jvzqES9`
+
+以下是流式的教程：
+
 ```
+下载我打包的流式TTS整合包
 我用夸克网盘分享了「xiaomi-websocket-tts-stream.zip」，点击链接即可保存。打开「夸克APP」，无需下载在线播放视频，畅享原画5倍速，支持电视投屏。
 链接：https://pan.quark.cn/s/d104a0e57294
 提取码：XLZA
