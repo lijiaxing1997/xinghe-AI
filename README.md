@@ -58,29 +58,18 @@ macos 启动方式：`python main.py --workers=5`
 没有授权文件请联系作者获取，获取到授权文件放在`main.py`同级目录即可。
 
 
-## TTS 文本转语音
-非流式的TTS教程：https://www.bilibili.com/video/BV1YQEFzpEaa
+## TTS 文本转语音(6月7日更新)
+PS：今后仅支持流式TTS，其他TTS的支持被删除。后续会适配音色更好的TTS。
 
-非流式请观看教程视频
-
-流式的TTS bilibili教程：`https://www.bilibili.com/video/BV1x8jvzqES9`
-
-以下是流式的教程：
-
+下载`ws_edge.zip`，在github首页TTS的文件夹里，解压后：
 ```
-下载我打包的流式TTS整合包
-我用夸克网盘分享了「xiaomi-websocket-tts-stream.zip」，点击链接即可保存。打开「夸克APP」，无需下载在线播放视频，畅享原画5倍速，支持电视投屏。
-链接：https://pan.quark.cn/s/d104a0e57294
-提取码：XLZA
-```
-解压后执行一下命令来启动
-```
-conda create --name=xiaomi-tts python=3.11
-conda activate xiaomi-tts
+conda create --name=ws_edge python=3.11
+conda activate ws_edge
+cd ws_edge
 pip install -r requirements.txt
-python tts_websocket_server.py
+python app/websocket_edge_tts.py
 ```
-然后到兴河AI客户端配置即可`ws://127.0.0.1:8011/`
+然后到兴河AI客户端配置即可`ws://127.0.0.1:5050/`
 
 ## ASR 安装
 bilibili教程：`https://www.bilibili.com/video/BV1GhJzzPE2U`
