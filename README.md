@@ -36,8 +36,8 @@ bilibili教程：`https://www.bilibili.com/video/BV1Qn53zBEAU`
 
 服务端使用了ollama中的bge-m3:latest，请先安装ollama，然后`ollama pull bge-m3:latest`
 ```shell
-1、解压下载好的xinghe.assistant-server-v1.0.0.zip
-2、cd xinghe.assistant-server-v1.0.0
+1、解压下载好的xinghe_AI_Asisstant_server_v1.2.2_mac_arm.zip
+2、cd xinghe_AI_Asisstant_server_v1.2.2_mac_arm
 3、conda create --name xinghe python=3.11.11 //遇到选择选y就行
 4、conda activate xinghe
 5、pip install -r requirements.txt //有的版本我忘记放了，github首页我传了一个，放到和main.py平级目录即可
@@ -49,11 +49,7 @@ bilibili教程：`https://www.bilibili.com/video/BV1Qn53zBEAU`
 ```
 因为不同操作系统管理多进程有差异，所以列举了以下启动命令：
 
-windows 启动方式：`python -m uvicorn main:app --workers 5`
-
-macos 启动方式：`python main.py --workers=5`
-
-服务端目录下有`.env`文件，请运行前打开编辑，填入`api key`，才可以调用模型
+启动方式：`python -m uvicorn main:app --workers 5`
 
 没有授权文件请联系作者获取，获取到授权文件放在`main.py`同级目录即可。
 
