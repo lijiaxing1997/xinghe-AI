@@ -38,7 +38,7 @@ bilibili教程：`https://www.bilibili.com/video/BV1Qn53zBEAU`
 ```shell
 1、解压下载好的xinghe.assistant-server-v1.0.0.zip
 2、cd xinghe.assistant-server-v1.0.0
-3、conda create --name xinghe python=3.11 //遇到选择选y就行
+3、conda create --name xinghe python=3.11.11 //遇到选择选y就行
 4、conda activate xinghe
 5、pip install -r requirements.txt //有的版本我忘记放了，github首页我传了一个，放到和main.py平级目录即可
 6、cd ExternalTools/mcp-sse-client-python/
