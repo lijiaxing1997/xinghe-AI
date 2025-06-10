@@ -63,7 +63,7 @@ PS：今后仅支持流式TTS，其他TTS的支持被删除。后续会适配音
 
 下载`ws_edge.zip`，在github首页TTS的文件夹里，解压后：
 ```
-conda create --name=ws_edge python=3.11
+conda create --name=ws_edge python=3.11.13
 conda activate ws_edge
 cd ws_edge
 pip install -r requirements.txt
