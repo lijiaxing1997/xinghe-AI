@@ -26,20 +26,10 @@ Agent的开发离不开外部工具的支持，兴河 AI Assistant 统一了工�
 # 预览
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="兴河AI_Assistant_Image.png">
-  <img alt="" src="兴河AI_Assistant_Image.png"  width="full">
+  <source media="(prefers-color-scheme: light)" srcset="main.png">
+  <img alt="" src="main.png"  width="full">
 </picture>
 
-
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="Langchain界面.png">
-  <img alt="" src="Langchain界面.png"  width="full">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="Agent编排.png">
-  <img alt="" src="Agent编排.png"  width="full">
-</picture>
 
 # 安装
 bilibili教程：`https://www.bilibili.com/video/BV1Qn53zBEAU`
