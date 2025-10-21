@@ -27,11 +27,11 @@
 </picture>
 
 
-# 安装
-bilibili教程：`https://www.bilibili.com/video/BV1Qn53zBEAU`
+# APP 安装
+bilibili教程：`【兴河AI APP 测试版 安装教程】 https://www.bilibili.com/video/BV13i4XzXEaM/?share_source=copy_web&vd_source=839bcc9ca34c35e2bc1e84691558392a`
 ## 客户端安装
-选择自己合适的平台进行安装即可。
-## 服务端安装
+选择自己合适的平台进行安装即可。请打开官网进行下载
+## 服务端安装(不搭建服务端请跳过)
 准备：
 服务端使用了`LibreOffice`的一些功能，请先安装`LibreOffice`：https://zh-tw.libreoffice.org/download/download-libreoffice/
 
@@ -96,6 +96,8 @@ bash run_server_2pass.sh \
 bilibili教程：`https://www.bilibili.com/video/BV1hEJJz6EAW`
 
 夸克网盘下载链接：https://pan.quark.cn/s/36950840ee1e 提取码：WHTM
+
+脚本内部是使用的mac的mps，如果您是windows使用的n卡，请将脚本的mps替换成cuda
 ```
 1、zip文件下载完成后解压
 2、使用命令行进入zip解压的目录
