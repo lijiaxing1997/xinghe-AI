@@ -31,7 +31,7 @@
 bilibili教程：`【兴河AI APP 测试版 安装教程】 https://www.bilibili.com/video/BV13i4XzXEaM/?share_source=copy_web&vd_source=839bcc9ca34c35e2bc1e84691558392a`
 ## 客户端安装
 选择自己合适的平台进行安装即可。请打开官网进行下载
-## 服务端安装(不搭建服务端请跳过)
+## 服务端安装(不搭建服务端请跳过)[目前源码安装停止更新]
 准备：
 服务端使用了`LibreOffice`的一些功能，请先安装`LibreOffice`：https://zh-tw.libreoffice.org/download/download-libreoffice/
 
