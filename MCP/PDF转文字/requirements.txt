@@ -1,0 +1,6 @@
+fastmcp
+PyMuPDF
+paddleocr
+Pillow
+reportlab
+
