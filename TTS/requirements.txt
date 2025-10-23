@@ -1,0 +1,11 @@
+flask
+gevent
+python-dotenv
+edge-tts
+emoji
+fastapi
+uvicorn
+librosa
+soundfile
+requests
+websockets
