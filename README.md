@@ -36,7 +36,7 @@ bilibili教程：`【兴河AI APP 测试版 安装教程】 https://www.bilibili
 ```shell
 docker load -i xinghe-ai-server_v1.4.0_x86.tar
 ```
-执行后，耐心等待，10个G的镜像，像redis、ollama等组件都已经内置，所以会比较大一些，导出成功后，可以使用下面命令查看时候导入成功
+执行后，耐心等待，10个G的镜像，像redis、ollama等组件都已经内置，所以会比较大一些，导入成功后，可以使用下面命令查看时候导入成功
 ```shell
 docker images
 ```
