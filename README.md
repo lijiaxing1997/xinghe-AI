@@ -55,14 +55,14 @@ bilibili教程：`【兴河AI APP 测试版 安装教程】 https://www.bilibili
 没有授权文件请联系作者获取，获取到授权文件放在`main.py`同级目录即可。
 
 
-## TTS 文本转语音(6月7日更新)
+## TTS 文本转语音(10月23日更新)
 PS：今后仅支持流式TTS，其他TTS的支持被删除。后续会适配音色更好的TTS。
 
 下载`ws_edge.zip`，在github首页TTS的文件夹里，解压后：
 ```
 conda create --name=ws_edge python=3.11.13
-conda activate ws_edge
-cd ws_edge
+conda activate ws_tts
+cd ws_minimax_edge_tts
 pip install -r requirements.txt
 python app/websocket_edge_tts.py
 ```
