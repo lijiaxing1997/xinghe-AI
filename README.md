@@ -52,8 +52,8 @@ PS：今后仅支持流式TTS，其他TTS的支持被删除。后续会适配音
 
 下载`ws_edge.zip`，在github首页TTS的文件夹里，解压后：
 ```
-conda create --name=ws_edge python=3.11.13
-conda activate ws_tts
+conda create --name=tts python=3.11.13
+conda activate tts
 cd ws_minimax_edge_tts
 pip install -r requirements.txt
 python app/websocket_edge_tts.py
@@ -63,10 +63,16 @@ python app/websocket_edge_tts.py
 ## ASR 安装
 bilibili教程：`https://www.bilibili.com/video/BV1GhJzzPE2U`
 
-拉取镜像
+拉取镜像，mac和linux使用：
 ```shell
 docker run -p 10096:10095 -it --privileged=true \
   -v $PWD/funasr-runtime-resources/models:/workspace/models \
+  registry.cn-hangzhou.aliyuncs.com/funasr_repo/funasr:funasr-runtime-sdk-online-cpu-0.1.12
+```
+windows使用：
+```
+docker run -p 10096:10095 -it --privileged=true `
+  -v $(pwd)/funasr-runtime-resources/models:/workspace/models `
   registry.cn-hangzhou.aliyuncs.com/funasr_repo/funasr:funasr-runtime-sdk-online-cpu-0.1.12
 ```
 进入容器，启动服务
