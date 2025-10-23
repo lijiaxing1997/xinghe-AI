@@ -50,7 +50,7 @@ docker run -d -p 8000:8000 xinghe-ai-server:v1.4.0 /bin/bash /root/start.sh
 ## TTS 文本转语音(10月23日更新)
 PS：今后仅支持流式TTS，其他TTS的支持被删除。后续会适配音色更好的TTS。
 
-下载`ws_edge.zip`，在github首页TTS的文件夹里，解压后：
+下载`ws_minimax_edge_tts.zip`，在github首页TTS的文件夹里，解压后：
 ```
 conda create --name=tts python=3.11.13
 conda activate tts
