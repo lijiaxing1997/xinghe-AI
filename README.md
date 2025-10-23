@@ -32,27 +32,19 @@ bilibili教程：`【兴河AI APP 测试版 安装教程】 https://www.bilibili
 ## 客户端安装
 选择自己合适的平台进行安装即可。请打开官网进行下载
 ## 服务端安装(不搭建服务端请跳过)[目前源码安装停止更新]
-准备：
-服务端使用了`LibreOffice`的一些功能，请先安装`LibreOffice`：https://zh-tw.libreoffice.org/download/download-libreoffice/
-
-服务端使用了ollama中的bge-m3:latest，请先安装ollama，然后`ollama pull bge-m3:latest`
+从网盘下载docker镜像`xinghe-ai-server_v1.4.0_x86.tar`在确保已经安装了docker以后，执行以下命令:
 ```shell
-1、解压下载好的xinghe_AI_Asisstant_server_v1.2.2_mac_arm.zip
-2、cd xinghe_AI_Asisstant_server_v1.2.2_mac_arm
-3、conda create --name xinghe python=3.11.11 //遇到选择选y就行
-4、conda activate xinghe
-5、pip install -r requirements.txt //有的版本我忘记放了，github首页我传了一个，放到和main.py平级目录即可
-6、cd ExternalTools/mcp-sse-client-python/
-7、python setup.py install
-8、cd ../../
-9、playwright install
-10、python create_token.py #生成token，这是访问服务器的必须要素。如果token泄漏或想更换token，请再次执行上述命令
+docker load -i xinghe-ai-server_v1.4.0_x86.tar
 ```
-因为不同操作系统管理多进程有差异，所以列举了以下启动命令：
-
-启动方式：`python -m uvicorn main:app --workers 5`
-
-没有授权文件请联系作者获取，获取到授权文件放在`main.py`同级目录即可。
+执行后，耐心等待，10个G的镜像，像redis、ollama等组件都已经内置，所以会比较大一些，导出成功后，可以使用下面命令查看时候导入成功
+```shell
+docker images
+```
+如果看到`xinghe-ai-server:1.4.0`就说明导入成功，导入成功后输入以下命令进行启动
+```
+docker run -d -p 8000:8000 xinghe-ai-server:v1.4.0 /bin/bash /root/start.sh
+```
+启动成功
 
 
 ## TTS 文本转语音(10月23日更新)
