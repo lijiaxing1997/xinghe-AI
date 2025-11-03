@@ -2,7 +2,7 @@
   <source media="(prefers-color-scheme: light)" srcset="标题.png">
   <img alt="" src="标题.png"  width="full">
 </picture>
-<h1 align="center">支持多用户、PC端、IOS APP 的 AI 🤖（最新版本：1.4.0）</h1>
+<h1 align="center">支持多用户、PC端、IOS APP 的 AI 🤖（最新版本：1.4.2）</h1>
 
 
 
@@ -47,7 +47,7 @@ docker run -d -p 8000:8000 xinghe-ai-server:v1.4.0 /bin/bash /root/start.sh
 启动成功
 
 
-## TTS 文本转语音(10月23日更新)
+## TTS 文本转语音(11月3日更新)
 PS：今后仅支持流式TTS，其他TTS的支持被删除。后续会适配音色更好的TTS。
 
 下载`ws_minimax_edge_tts.zip`，在github首页TTS的文件夹里，解压后：
@@ -58,7 +58,7 @@ cd ws_minimax_edge_tts
 pip install -r requirements.txt
 python app/websocket_edge_tts.py
 ```
-然后到兴河AI客户端配置即可`ws://127.0.0.1:5050/`
+然后到兴河AI客户端配置即可`ws://127.0.0.1:5050/`,推荐大家使用minimax 现在的minimax是最强TTS，超低延时，自带情感。强推
 
 ## ASR 安装
 bilibili教程：`https://www.bilibili.com/video/BV1GhJzzPE2U`
