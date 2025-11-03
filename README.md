@@ -90,22 +90,6 @@ bash run_server_2pass.sh \
   --hotword /workspace/models/hotwords.txt
 ```
 
-## 视觉FastVLM安装
-bilibili教程：`https://www.bilibili.com/video/BV1hEJJz6EAW`
-
-夸克网盘下载链接：https://pan.quark.cn/s/36950840ee1e 提取码：WHTM
-
-脚本内部是使用的mac的mps，如果您是windows使用的n卡，请将脚本的mps替换成cuda
-```
-1、zip文件下载完成后解压
-2、使用命令行进入zip解压的目录
-3、conda create -n fastvlm python=3.10
-4、conda activate fastvlm
-5、pip install -e .
-6、python main.py
-```
-就可以看到api的端口，去兴河AI填上`http://127.0.0.1:9091/descImage`即可。
-
 
 
 # 联系我
