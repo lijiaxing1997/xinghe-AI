@@ -2,7 +2,7 @@
   <source media="(prefers-color-scheme: light)" srcset="标题.png">
   <img alt="" src="标题.png"  width="full">
 </picture>
-<h1 align="center">支持多用户、PC端、IOS APP 的 AI 🤖（最新版本：1.4.2）</h1>
+<h1 align="center">支持多用户、PC端、IOS APP 的 AI 🤖（最新版本：1.5.0）</h1>
 
 
 
