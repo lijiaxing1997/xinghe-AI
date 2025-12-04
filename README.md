@@ -2,8 +2,9 @@
   <source media="(prefers-color-scheme: light)" srcset="标题.png">
   <img alt="" src="标题.png"  width="full">
 </picture>
-<h1 align="center">支持多用户、PC端、IOS APP 的 AI 🤖（最新版本：1.5.0）</h1>
+<h1 align="center">支持多用户、PC端、安卓APP 的 AI 🤖（最新版本：1.6.2）</h1>
 
+<h1 align="center">更新日志 2025年12月4日</h1>
 
 
 # 简介
@@ -25,70 +26,6 @@
   <source media="(prefers-color-scheme: light)" srcset="main.png">
   <img alt="" src="main.png"  width="full">
 </picture>
-
-
-# APP 安装
-bilibili教程：`【兴河AI APP 测试版 安装教程】 https://www.bilibili.com/video/BV13i4XzXEaM/?share_source=copy_web&vd_source=839bcc9ca34c35e2bc1e84691558392a`
-## 客户端安装
-选择自己合适的平台进行安装即可。请打开官网进行下载
-## 服务端安装(不搭建服务端请跳过)[目前源码安装停止更新]
-从网盘下载docker镜像`xinghe-ai-server_v1.4.0_x86.tar`在确保已经安装了docker以后，执行以下命令:
-```shell
-docker load -i xinghe-ai-server_v1.4.0_x86.tar
-```
-执行后，耐心等待，6个G的镜像，像redis、ollama等组件都已经内置，所以会比较大一些，导入成功后，可以使用下面命令查看时候导入成功
-```shell
-docker images
-```
-如果看到`xinghe-ai-server:1.4.0`就说明导入成功，导入成功后输入以下命令进行启动
-```
-docker run -d -p 8000:8000 xinghe-ai-server:v1.4.0 /bin/bash /root/start.sh
-```
-启动成功
-
-
-## TTS 文本转语音(11月3日更新)
-PS：今后仅支持流式TTS，其他TTS的支持被删除。后续会适配音色更好的TTS。
-
-下载`ws_minimax_edge_tts.zip`，在github首页TTS的文件夹里，解压后：
-```
-conda create --name=tts python=3.11.13
-conda activate tts
-cd ws_minimax_edge_tts
-pip install -r requirements.txt
-python app/websocket_edge_tts.py
-```
-然后到兴河AI客户端配置即可`ws://127.0.0.1:5050/`,推荐大家使用minimax 现在的minimax是最强TTS，超低延时，自带情感。强推
-
-## ASR 安装
-bilibili教程：`https://www.bilibili.com/video/BV1GhJzzPE2U`
-
-拉取镜像，mac和linux使用：
-```shell
-docker run -p 10096:10095 -it --privileged=true \
-  -v $PWD/funasr-runtime-resources/models:/workspace/models \
-  registry.cn-hangzhou.aliyuncs.com/funasr_repo/funasr:funasr-runtime-sdk-online-cpu-0.1.12
-```
-windows使用：
-```
-docker run -p 10096:10095 -it --privileged=true `
-  -v $(pwd)/funasr-runtime-resources/models:/workspace/models `
-  registry.cn-hangzhou.aliyuncs.com/funasr_repo/funasr:funasr-runtime-sdk-online-cpu-0.1.12
-```
-进入容器，启动服务
-```shell
-cd FunASR/runtime
-bash run_server_2pass.sh \
-  --download-model-dir /workspace/models \
-  --vad-dir damo/speech_fsmn_vad_zh-cn-16k-common-onnx \
-  --model-dir damo/speech_paraformer-large-vad-punc_asr_nat-zh-cn-16k-common-vocab8404-onnx  \
-  --online-model-dir damo/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-online-onnx  \
-  --punc-dir damo/punc_ct-transformer_zh-cn-common-vad_realtime-vocab272727-onnx \
-  --lm-dir damo/speech_ngram_lm_zh-cn-ai-wesp-fst \
-  --itn-dir thuduj12/fst_itn_zh \
-    --certfile 0 \
-  --hotword /workspace/models/hotwords.txt
-```
 
 
 
